@@ -150,7 +150,7 @@ public class NhiemVuMuaRauDen implements NhiemVu {
 Trong Spring, việc tạo ra một sự liên kết giữa các thành phần của ứng dụng thường được gọi là *wire (kết nối)*. Có rất nhiều cách để kết nối các thành phần lại với nhau, một phương pháp phổ biến thường được sử dụng là thông qua XML. 
 
 Dưới đây là một đoạn mã XML đơn giản trong file cấu hình **dungsi.xml** của Spring. File cấu hình này sẽ liên kết `DungSiThongThai` và `NhiemVuMuaRauDen` lại với nhau, và chỉ có **dungsi.xml** mới biết nhiệm vụ nào sẽ được giao cho `DungSiThongThai`
-```java
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
