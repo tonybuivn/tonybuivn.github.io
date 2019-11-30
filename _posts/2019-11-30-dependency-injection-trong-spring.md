@@ -3,7 +3,7 @@ layout: post
 title: Dependency Injection trong Spring
 author: [tony]
 categories: [technology]
-tags: [blockchain]
+tags: [java, spring, design pattern]
 comments: true
 ---
 
