@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Block chain là cái quái gì vậy ???
+title: Blockchain là cái quái gì vậy ???
 author: [tony]
 categories: [technology]
 tags: [blockchain]
