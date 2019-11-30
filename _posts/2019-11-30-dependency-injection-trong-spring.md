@@ -5,6 +5,7 @@ author: [tony]
 categories: [technology]
 tags: [java, spring, designpattern]
 comments: true
+image: /img/avatar-tony.png
 ---
 
 Author: [@tonybui](https://github.com/tonybuivn)

@@ -5,6 +5,7 @@ author: [tony]
 categories: [technology]
 tags: [blockchain]
 comments: true
+image: /img/avatar-tony.png
 ---
 
 Author: [@tonybui](https://github.com/tonybuivn)
