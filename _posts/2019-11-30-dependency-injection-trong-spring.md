@@ -157,11 +157,11 @@ Dưới đây là một đoạn mã XML đơn giản trong file cấu hình **du
     xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean id="dungsi" class="com.kaopiz.dungsi.DungSiThongThai">
+<bean id="dungsi" class="com.dhs.dungsi.DungSiThongThai">
 	<constructor-arg ref="nhiemvu" />
 </bean>
 
-<bean id="nhiemvu" class="com.kaopiz.nhiemvu.NhiemVuMuaRauDen">
+<bean id="nhiemvu" class="com.dhs.nhiemvu.NhiemVuMuaRauDen">
 	<constructor-arg value="#{T(System).out}" />
 </bean>
 ```
