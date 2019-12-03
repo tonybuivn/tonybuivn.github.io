@@ -3,17 +3,17 @@ layout: post
 title: (Memo) Export & Import putty settings
 author: [tunghust]
 categories: [technology]
-tags: [microservice]
+tags: [tips]
 comments: true
 ---
 
 Author: [@tunghust](https://github.com/tunghust)
 
-Memo dành cho việc export & import putty setting sang 1 máy PC khác.  
+Memo dành cho việc export & import putty settings sang 1 máy PC khác.  
 ※Môi trường: Windows
 
 ## Cách Export  
-1. Khởi động cmd command `Widnows + R`  
+1. Khởi động `cmd` command `Widnows + R`  
 2. Export sessions only  
 `regedit /e "%USERPROFILE%\Desktop\putty-sessions.reg" HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions`
 3. Export sessions with setting  
