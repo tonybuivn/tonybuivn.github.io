@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (メモ) Centos環境のメールサービス操作
+title: (メモ) Centos環境でのメールサービス操作
 author: [tunghust]
 categories: [technology]
 tags: [tips]
