@@ -22,7 +22,7 @@ Nói một cách đơn giản, Cache là một vùng nhớ lưu trữ dữ liệ
 
 Trong bài này, chúng ta sẽ sử dụng Redis làm bộ nhớ đệm để lưu trữ.
 
-# 4. Redis là gì ?
+# 3. Redis là gì ?
 Theo định nghĩa trên trang chủ của [Redis](https://redis.io/), thì Redis là một mã nguồn mở (theo BSD License) lưu trữ dữ liệu dạng cấu trúc trong bộ nhớ (in-memory), được sử dụng như một database, bộ đệm và message broker.
 
 Redis hỗ trợ nhiều cấu trúc dữ liệu khác nhau như là Strings, Hashes, Lists, Sets,...
@@ -30,7 +30,7 @@ Redis hỗ trợ nhiều cấu trúc dữ liệu khác nhau như là Strings, Ha
 {: .box-note}
 **Rails related:** Với những dự án sử dụng Rails phía server, Redis thường được sử dụng làm bộ nhớ đệm lưu trữ các Job từ Sidekiq dưới dạng Key - Value.
 
-# 5. Vì sao chúng ta nên dùng Redis ?
+# 4. Vì sao chúng ta nên dùng Redis ?
 1. Nó siêu nhanh. Có lẽ bởi vì nó được viết bằng C chăng :))
 ![Flash](https://media.giphy.com/media/3oriNYQX2lC6dfW2Ji/giphy.gif)
 
@@ -49,8 +49,8 @@ Redis hỗ trợ nhiều cấu trúc dữ liệu khác nhau như là Strings, Ha
 
 *Redis be like, "I'm super cool"*
 
-# 6. Cài đặt và start Redis server
-## 6.1 Cài đặt
+# 5. Cài đặt và start Redis server
+## 5.1 Cài đặt
 Có nhiều cách để cài đặt Redis. Các bạn dùng Mac thì có thể cài đặt một cách đơn giản thông qua brew
 ```
 $ brew install redis
@@ -58,7 +58,7 @@ $ brew install redis
 
 Với các bạn không dùng Mac có thể tham khảo cách cài đặt khác trên trang chủ của [Redis](https://redis.io/topics/quickstart)
 
-## 6.2 Thiết lập chế độ autostart cho Redis
+## 5.2 Thiết lập chế độ autostart cho Redis
 
 ・ Chạy Redis mỗi khi khởi động máy tính
 ```
@@ -70,7 +70,7 @@ $ ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
 $ launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 ```
 
-## 6.3 Khởi động Redis server 
+## 5.3 Khởi động Redis server 
 
 ・ Sử dụng `configuration file` (mình hay dùng cách này)
 ```
@@ -82,7 +82,7 @@ $ redis-server /usr/local/etc/redis.conf
 $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 ```
 
-## 6.4 Check xem Redis đã hoạt động hay chưa
+## 5.4 Check xem Redis đã hoạt động hay chưa
 ```
 $ redis-cli ping
 ```
