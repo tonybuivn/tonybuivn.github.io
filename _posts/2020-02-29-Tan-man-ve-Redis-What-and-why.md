@@ -50,7 +50,7 @@ Redis hỗ trợ nhiều cấu trúc dữ liệu khác nhau như là Strings, Ha
 *Redis be like, "I'm super cool"*
 
 # 5. Cài đặt và start Redis server
-## 5.1 Cài đặt
+### 5.1 Cài đặt
 Có nhiều cách để cài đặt Redis. Các bạn dùng Mac thì có thể cài đặt một cách đơn giản thông qua brew
 ```
 $ brew install redis
@@ -58,7 +58,7 @@ $ brew install redis
 
 Với các bạn không dùng Mac có thể tham khảo cách cài đặt khác trên trang chủ của [Redis](https://redis.io/topics/quickstart)
 
-## 5.2 Thiết lập chế độ autostart cho Redis
+### 5.2 Thiết lập chế độ autostart cho Redis
 
 ・ Chạy Redis mỗi khi khởi động máy tính
 ```
@@ -70,7 +70,7 @@ $ ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
 $ launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 ```
 
-## 5.3 Khởi động Redis server 
+### 5.3 Khởi động Redis server 
 
 ・ Sử dụng `configuration file` (mình hay dùng cách này)
 ```
@@ -82,7 +82,7 @@ $ redis-server /usr/local/etc/redis.conf
 $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 ```
 
-## 5.4 Check xem Redis đã hoạt động hay chưa
+### 5.4 Check xem Redis đã hoạt động hay chưa
 ```
 $ redis-cli ping
 ```
