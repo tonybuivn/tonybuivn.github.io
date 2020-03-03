@@ -32,12 +32,10 @@ Redis hỗ trợ nhiều cấu trúc dữ liệu khác nhau như là Strings, Ha
 
 # 5. Vì sao chúng ta nên dùng Redis ?
 1. Nó siêu nhanh. Có lẽ bởi vì nó được viết bằng C chăng :))
-
-![Flash](https://media.giphy.com/media/3oriNYQX2lC6dfW2Ji/giphy.gif){: .center-block :}
+![Flash](https://media.giphy.com/media/3oriNYQX2lC6dfW2Ji/giphy.gif)
 
 2. Là một NoSql Database. Nghe thật fancy phải không :))
-
-![NoSQL](https://miro.medium.com/max/700/1*b9ST4A6cvmAcmddepxP2pg.gif){: .center-block :}
+![NoSQL](https://miro.medium.com/max/700/1*b9ST4A6cvmAcmddepxP2pg.gif)
 
 3. Hiện tại Redis đang được sử dụng bởi các ông lớn trong làng công nghệ như Github, Weibo, Pinterest, Snapchat, Craigslist, Digg, Stackoverflow, Flickr,... Cũng có chút yên tâm đúng ko nào :v
 
