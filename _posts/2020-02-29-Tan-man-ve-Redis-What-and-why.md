@@ -47,9 +47,9 @@ Redis hỗ trợ nhiều cấu trúc dữ liệu khác nhau như là Strings, Ha
 
 6. Điều cuối cùng và có lẽ cũng là một điều hiển nhiên, Redis là open-source và rất ổn định. Vậy còn chần chờ gì mà không say "Yes" với Redis.
 
-![super-cool](https://miro.medium.com/max/986/1*NaUZFuHTRIZY23qMsgfb4g.gif){: .center-block :}
+![super-cool](https://miro.medium.com/max/986/1*NaUZFuHTRIZY23qMsgfb4g.gif)
 
-*Redis be like, "I'm super cool"*{: .center-block :}
+*Redis be like, "I'm super cool"*
 
 # 6. Cài đặt và start Redis server
 ## 6.1 Cài đặt
@@ -61,24 +61,25 @@ $ brew install redis
 Với các bạn không dùng Mac có thể tham khảo cách cài đặt khác trên trang chủ của [Redis](https://redis.io/topics/quickstart)
 
 ## 6.2 Thiết lập chế độ autostart cho Redis
-### ・ Chạy Redis mỗi khi khởi động máy tính
+
+・ Chạy Redis mỗi khi khởi động máy tính
 ```
 $ ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
 ```
 
-### ・ Tắt chế độ autostart Redis khi khởi động máy tính
+・ Tắt chế độ autostart Redis khi khởi động máy tính
 ```
 $ launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 ```
 
 ## 6.3 Khởi động Redis server 
 
-### ・ Sử dụng `configuration file` (mình hay dùng cách này)
+・ Sử dụng `configuration file` (mình hay dùng cách này)
 ```
 $ redis-server /usr/local/etc/redis.conf
 ```
 
-### ・ Thông qua “launchctl”.
+・ Thông qua “launchctl”.
 ```
 $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 ```
@@ -101,19 +102,19 @@ $ redis-cli
 
 Mặc định Redis-CLI chạy trên port `6379`
 
-## SET (Thiết lập một Key)
+・ SET (Thiết lập một Key)
 ```
 127.0.0.1:6379> SET foo "Hello DHS"
 OK // setting a key
 ```
 
-## GET (Lấy ra một Key)
+・ GET (Lấy ra một Key)
 ```
 127.0.0.1:6379> GET foo
 "Hello DHS" // getting a key
 ```
 
-## DEL (Xoá một Key)
+・ DEL (Xoá một Key)
 ```
 127.0.0.1:6379> GET foo 
 "Hello DHS" // getting a key
@@ -123,31 +124,31 @@ OK // setting a key
 (nil) // since key is deleted therefore, result is nil.
 ```
 
-## SETEX (Thiết lập một Key có thời hạn)
+・ SETEX (Thiết lập một Key có thời hạn)
 ```
 127.0.0.1:6379> SETEX foo 40 "Hello DHS will be expired in 40 seconds"
 OK // key has been set with 40 seconds as expiration
 ```
 
-## TTL (Total Time left - Tổng thời gian còn lại của một Key cho đến khi bị timeout)
+・ TTL (Total Time left - Tổng thời gian còn lại của một Key cho đến khi bị timeout)
 ```
 127.0.0.1:6379> TTL foo
 (integer) 36 // 36 seconds left to timeout
 ```
 
-## PERSIST (Xoá bỏ thời gian timeout khỏi Key, có nghĩa Key sẽ không bị expire nữa)
+・ PERSIST (Xoá bỏ thời gian timeout khỏi Key, có nghĩa Key sẽ không bị expire nữa)
 ```
 127.0.0.1:6379> PERSIST foo
 (integer) 1 // turning the key from volatile to persistent (key won't expire)
 ```
 
-## RENAME (Đổi tên của một Key)
+・ RENAME (Đổi tên của một Key)
 ```
 127.0.0.1:6379> RENAME foo bar
 OK // renaming the key 'foo' as bar
 ```
 
-## FLUSHALL (Giải phóng các Key đã được lưu)
+・ FLUSHALL (Giải phóng các Key đã được lưu)
 ```
 127.0.0.1:6379> flushall
 OK // just got flushed
@@ -165,13 +166,13 @@ Về cơ bản chúng ta có các pattern như sau
 
 Example
 
-- Thiết lập Key - Value
+・ Thiết lập Key - Value
 ```
 127.0.0.1:6379> MSET firstname Tony lastname Bui middlenames Something age 28 job engineer
 OK
 ```
 
-- Trả về tất cả các Key
+・ Trả về tất cả các Key
 ```
 127.0.0.1:6379> KEYS *
 1) "middlenames"
@@ -181,14 +182,14 @@ OK
 5) "age"
 ```
 
-- Trả về các Key có kết thúc bằng xâu `name`
+・ Trả về các Key có kết thúc bằng xâu `name`
 ```
 127.0.0.1:6379> KEYS *name
 1) "lastname"
 2) "firstname"
 ```
 
-- Trả về các Key có chứa xâu `name`
+・ Trả về các Key có chứa xâu `name`
 ```
 127.0.0.1:6379> KEYS *name*
 1) "middlenames"
@@ -196,7 +197,7 @@ OK
 3) "firstname"
 ```
 
-- Trả về Keys có bắt đầu bằng ký tự `a` và tiếp sau đó phải có 2 ký tự bất kỳ
+・ Trả về Keys có bắt đầu bằng ký tự `a` và tiếp sau đó phải có 2 ký tự bất kỳ
 ```
 127.0.0.1:6379> KEYS a??
 1) "age"
