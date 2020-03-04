@@ -35,5 +35,5 @@ Lúc này việc thực hiện kết nối từ `local` thông qua port `6789` s
 - Được dùng trong `putty` chính là `SSH tunnel`
 - Tool kết nối `DB Workbench`
 - Tạo kết nối trực tiếp tới `DB Server` từ `local`
-- Tạo kết nói trực tiếp tới `FTP Server` từ `local`
+- Tạo kết nối trực tiếp tới `FTP Server` từ `local`
 - etc...
