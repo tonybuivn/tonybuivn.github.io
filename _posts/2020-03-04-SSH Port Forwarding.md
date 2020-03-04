@@ -9,8 +9,6 @@ comments: true
 
 Author: [@tunghust](https://github.com/tunghust)
 
-SSH Port Forwarding - Không chỉ đơn thuần là SSH
-
 ## Bối cảnh
 Bạn muốn truy cập vào server `dhs_blog` trên cổng `1234` từ `local` trong khi server đó chỉ `accept` kết nối từ server trung gian tạm gọi là `dhs_entrance`  
 Khi đó giải pháp của bạn sẽ là gì?
