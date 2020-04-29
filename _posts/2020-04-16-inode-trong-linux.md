@@ -73,8 +73,9 @@ tmpfs            62293     16   62277    1% /sys/fs/cgroup
 /dev/loop4       12852  12852       0  100% /snap/core/8935
 tmpfs            62293      4   62289    1% /run/user/1000
 /dev/loop0       12857  12857       0  100% /snap/core/9066
-
 ```
+
+Nhìn vào dữ liệu chúng ta có thể thấy như sau.
 
 | Column | Giải thích |
 | :--- | :---: |
